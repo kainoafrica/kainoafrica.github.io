@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+  <title>Profile </title>
+
+  <!-- Favicons-->
+  <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <!-- Favicons-->
+  <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+  <!-- For iPhone -->
+  <meta name="msapplication-TileColor" content="#00bcd4">
+  <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+  <!-- For Windows Phone -->
+
+
+  <!-- CORE CSS-->
+  
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->    
+    <link href="css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+  <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+  <link href="js/plugins/prism/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+<body>
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  <!-- End Page Loading -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START HEADER -->
+  <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color">
+                <div class="nav-wrapper">
+                    <ul class="left">                      
+                      <li><h1 class="logo-wrapper"><a href="user-profile-page.html" class="brand-logo darken-1"><img src="images/materialize-logo.png" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1></li>
+                    </ul>
+                    <div class="header-search-wrapper hide-on-med-and-down">
+                        <i class="mdi-action-search"></i>
+                        <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore kaino features"/>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown"><img src="images/flag-icons/United-States.png" alt="USA" /></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown"><i class="mdi-social-notifications"><small class="notification-badge">5</small></i>
+                        
+                        </a>
+                        </li>                        
+                        <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                        </li>
+                    </ul>
+                    <!-- translation-button -->
+                    <ul id="translation-dropdown" class="dropdown-content">
+                      <li>
+                        <a href="#!"><img src="images/flag-icons/United-States.png" alt="English" />  <span class="language-select">English</span></a>
+                      </li>
+                      <li>
+                        <a href="#!"><img src="images/flag-icons/France.png" alt="French" />  <span class="language-select">French</span></a>
+                      </li>
+                      <li>
+                        <a href="#!"><img src="images/flag-icons/China.png" alt="Chinese" />  <span class="language-select">Chinese</span></a>
+                      </li>
+                      <li>
+                        <a href="#!"><img src="images/flag-icons/Germany.png" alt="German" />  <span class="language-select">German</span></a>
+                      </li>
+                      
+                    </ul>
+                    <!-- notifications-dropdown -->
+                    <ul id="notifications-dropdown" class="dropdown-content">
+                      <li>
+                        <h5>NOTIFICATIONS <span class="new badge">5</span></h5>
+                      </li>
+                      <li class="divider"></li>
+                    <li>
+                      <a href="#!"><i class="mdi-action-add-shopping-cart"></i> A new book is available!</a>
+                      <time class="media-meta" datetime="2018-07-12T20:50:48+08:00">2 hours ago</time>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="mdi-action-stars"></i> Completed the mathmatics assignment</a>
+                      <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="mdi-action-settings"></i> update user profile</a>
+                      <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="mdi-editor-insert-invitation"></i> class meeting this afternoon</a>
+                      <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
+                    </li>
+                    <li>
+                      <a href="#!"><i class="mdi-action-trending-up"></i> Class Debate</a>
+                      <time class="media-meta" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+  </header>
+  <!-- END HEADER -->
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START MAIN -->
+  <div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+      <!-- START LEFT SIDEBAR NAV-->
+      <aside id="left-sidebar-nav">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+            <li class="user-details cyan darken-2">
+            <div class="row">
+                <div class="col col s4 m4 l4">
+                    <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+                    <ul id="profile-dropdown" class="dropdown-content">
+                        <li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">Sharon Nyafamba<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <p class="user-roal">Administrator</p>
+                </div>
+            </div>
+            </li>
+            <li class="bold"><a href="user-profile-page.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-view-carousel"></i>Kaino Library</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="books.html">Downloaded Books</a>
+                                </li>
+                                <li><a href="available-books.html">Available Books</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>
+            </li>
+            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> Calender</a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i>Curriculum</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="lessonplan.html">Lesson Plan</a>
+                                </li>
+                                <li><a href="pastpapers.html">Past Papers</a>
+                                </li>
+                                <li><a href="subjectnotes.html">Subject Notes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+        </ul>
+        <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu"></i></a>
+        </aside>
+      <!-- END LEFT SIDEBAR NAV-->
+
+      <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+      <!-- START CONTENT -->
+      <section id="content">        
+
+        <!--start container-->
+        <div class="container">
+
+          <div id="profile-page" class="section">
+            <!-- profile-page-header -->
+            <div id="profile-page-header" class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/user-profile-bg.jpg" alt="user background">                    
+                </div>
+                <figure class="card-profile-image">
+                    <img src="images/avatar.jpg" alt="profile image" class="circle z-depth-2 responsive-img activator">
+                </figure>
+                <div class="card-content">
+                  <div class="row">                    
+                    <div class="col s3 offset-s2">                        
+                        <h4 class="card-title grey-text text-darken-4">Sharon </h4>
+                        <p class="medium-small grey-text">Budo Junior</p>                        
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">10+</h4>
+                        <p class="medium-small grey-text">Downloads</p>                        
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">6</h4>
+                        <p class="medium-small grey-text">Read</p>                        
+                    </div>                    
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">UGX 40,000</h4>
+                        <p class="medium-small grey-text">cost of Books</p>                        
+                    </div>                    
+                    <div class="col s1 right-align">
+                      <a class="btn-floating activator waves-effect waves-light darken-2 right">
+                          <i class="mdi-action-perm-identity"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-reveal">
+                    <p>
+                      <span class="card-title grey-text text-darken-4">Sharon Nyafamba <i class="mdi-navigation-close right"></i></span>
+                      <span><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Budo Junior</span>
+                    </p>
+
+                    <p>kaino App has helped me up my grades.</p>
+                    
+                    <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +256704564433</p>
+                    <p><i class="mdi-communication-email cyan-text text-darken-2"></i> sharonnyafamba@gmail.com</p>
+                    <p><i class="mdi-social-cake cyan-text text-darken-2"></i> 18th June 1990</p>
+                </div>
+            </div>
+            <!--/ profile-page-header -->
+
+            <!-- profile-page-content -->
+            <div id="profile-page-content" class="row">
+              <!-- profile-page-sidebar-->
+              <div id="profile-page-sidebar" class="col s12 m4">
+                <!-- Profile About  -->
+                <div class="card light-blue">
+                  <div class="card-content white-text">
+                    <span class="card-title">About Me!</span>
+                    <p>i get to read a book a day and play so hard :) .</p>
+                  </div>                  
+                </div>
+                <!-- Profile About  -->
+
+                <!-- Profile About Details  -->
+                <ul id="profile-page-about-details" class="collection z-depth-1">
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-action-wallet-travel"></i> School</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Budo Junior</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-poll"></i> Subjects</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Math, Science</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-domain"></i> Classes</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">P5-P7</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-cake"></i> Title</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">Class Teacher</div>
+                    </div>
+                  </li>
+                </ul>
+                <!--/ Profile About Details  -->
+
+                <!-- Profile About  -->
+                <div class="card amber darken-2">
+                  <div class="card-content white-text center-align">
+                    <p class="card-title"><i class="mdi-social-group-add"></i> 87</p>
+                    <p>Pupils Population</p>
+                  </div>                  
+                </div>
+                <!-- Profile About  -->
+
+               
+
+                <!-- task-card -->
+                <ul id="task-card" class="collection with-header">
+                  <li class="collection-header cyan">
+                      <h4 class="task-card-title">My Task</h4>
+                      <p class="task-card-date">July 20, 2018</p>
+                  </li>
+                  <li class="collection-item dismissable">
+                      <input type="checkbox" id="task1" />
+                      <label for="task1">Teach Vectors to P7. <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                      </label>
+                      <span class="task-cat teal">P7 class</span>
+                  </li>
+                  <li class="collection-item dismissable">
+                      <input type="checkbox" id="task2" />
+                      <label for="task2">Review Student's Perfomance. <a href="#" class="secondary-content"><span class="ultra-small">Monday</span></a>
+                      </label>
+                      <span class="task-cat purple">P5, P6, P7</span>
+                  </li>
+                  <li class="collection-item dismissable">
+                      <input type="checkbox" id="task3" checked="checked" />
+                      <label for="task3">Upload Curriculum. <a href="#" class="secondary-content"><span class="ultra-small">Wednesday</span></a>
+                      </label>
+                      <span class="task-cat pink">Science</span>
+                  </li>
+                  <li class="collection-item dismissable">
+                      <input type="checkbox" id="task4" checked="checked" disabled="disabled" />
+                      <label for="task4">village life is better than town life</label>
+                      <span class="task-cat cyan">Debate</span>
+                  </li>
+                </ul>
+                <!-- task-card -->
+
+                <!-- Profile Total sell -->
+                <div class="card center-align">
+                  <div class="card-content purple white-text">
+                      <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Teacher Student Performance</p>
+                      <h4 class="card-stats-number">P6,P7</h4>
+                      <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70% <span class="purple-text text-lighten-5">last month</span>
+                      </p>
+                  </div>
+                  <div class="card-action purple darken-2">
+                      <div id="sales-compositebar"></div>
+                  </div>
+                </div>
+
+                <!-- Map Card -->
+                <div class="map-card">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <div id="map-canvas" data-lat="0.2557803" data-lng="32.4632074"></div>
+                        </div>
+                        <div class="card-content">                    
+                            <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                                <i class="mdi-maps-pin-drop"></i>
+                            </a>
+                            <h4 class="card-title grey-text text-darken-4"><a href="#" class="grey-text text-darken-4">Company Name LLC</a>
+                            </h4>
+                            <p class="blog-post-content">Some more information about this company.</p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Company Name LLC <i class="mdi-navigation-close right"></i></span>                   
+                            <p>Budo Junior School.</p>
+                            <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Sharon </p>
+                            <p><i class="mdi-communication-business cyan-text text-darken-2"></i>P.O Box 7654 Kampala</p>
+                            <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i>+256704564433</p>
+                            <p><i class="mdi-communication-email cyan-text text-darken-2"></i> sharon@budojunior.com</p>                    
+                        </div>
+                    </div>
+                </div>
+                <!-- Map Card -->
+
+              </div>
+              
+      <!-- LEFT RIGHT SIDEBAR NAV-->
+
+    </div>
+    <!-- END WRAPPER -->
+
+  </div>
+  <!-- END MAIN -->
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+  <!-- START FOOTER -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+        <span>Copyright © 2018 <a class="grey-text text-lighten-4" href="http://kaino.africa" target="_blank">KAINOafrica</a> All rights reserved.</span>
+        <span class="right"> Design and Developed by <a class="grey-text text-lighten-4" href="http://kaino.africa">Meshach Moiti</a></span>
+        </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/plugins/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="js/plugins/prism/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- chartist -->
+    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>  
+
+    <!-- sparkline -->
+    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
+    
+    <!-- google map api -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
+    <!--google map-->
+    <script type="text/javascript" src="js/plugins/google-map/google-map-script.js"></script>
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.min.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+
+    <!-- Toast Notification -->
+    <script type="text/javascript">
+    // Toast Notification
+    $(window).load(function() {
+        setTimeout(function() {
+            Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
+        }, 1500);
+        setTimeout(function() {
+            Materialize.toast('<span>You can swipe me too!</span>', 3000);
+        }, 5000);
+        setTimeout(function() {
+            Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
+        }, 15000);
+    });
+    </script>
+    
+</body>
+
+</html>
